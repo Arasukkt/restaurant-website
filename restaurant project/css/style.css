@@ -1,0 +1,171 @@
+
+:root{
+    --darkblue:#191D88;
+    --midblue:#1450A3;
+    --lightblue:#337CCF;
+    --yellow:#FFC436;
+}
+
+body,h2{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    
+
+}
+.start{
+    background-image: url(../bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:white;
+}
+header a{
+    text-decoration: none;
+    color: var(--darkblue);
+    color:var(--yellow);
+}
+header{
+    display: flex;
+    padding: 20px;
+}
+#logo{
+    flex: 3;
+    font-size: 1.5em;
+}
+nav{
+    flex: 2;
+    display: flex;
+}
+nav a{
+    flex:1;
+   
+}
+nav a:hover{
+    color:var(--lightblue);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    justify-content: center;
+    padding:2.5em;
+}
+.main1{
+    color: var(--darkblue);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.main2{
+    color:var(--midblue);
+    font-size: 25px;
+}
+.maintext div{
+    margin-top: .80em;
+}
+button{
+    /* color: var(--darkblue); */
+    color: white;
+    background-color:var(--lightblue);
+    border-color: rgb(255, 5, 5);
+    width: 20%;
+    margin-top: 2em;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid var(--darkblue);
+
+    /* border: 1.5em dot black; */
+    /* border-width: 1.5em; */
+    /* background-color: linear-gradient(red,blue,yellow); */
+}
+
+.menu{
+    display: grid;
+    color: whitesmoke;
+   grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) ;  /* !important */
+    background: linear-gradient(to right,rgb(176, 163, 163),rgb(3, 1, 1));
+}
+.menu th{
+    color:red;
+    padding: 20px;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: .8em;
+    
+}
+.menu td:nth-child(1){
+    justify-self: left;
+    flex: 1;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+/*  .thevaiyana heading{
+grid-row:span 2; 2 row vukku span aaagum
+}*/
+.location{
+    color:whitesmoke;
+    display: flex;
+    background: linear-gradient(to right,rgb(176, 163, 163),rgb(3, 1, 1));
+}
+.location h3{
+    color: red;
+    margin-bottom: .8em;
+}
+.location div{
+    flex:1;
+    padding:1.5em;
+    min-width: 198px;
+}
+.menuh,.locationh{
+    /* color: black; */
+    font-size: 2.5em;
+    color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background: linear-gradient(to right,rgb(176, 163, 163),rgb(3, 1, 1));
+}
+/* .locationh{
+    display:flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+/* } */ 
+.location{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    background:black;
+    color: whitesmoke;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    min-width: 280px;
+}
+header a{
+    min-width: 120px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+/* header a:nth-child(1){
+    color: red;
+} */
+.logo i{
+    color: red;
+}
